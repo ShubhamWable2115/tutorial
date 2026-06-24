@@ -128,3 +128,35 @@
 // attachEventlistners();
 
  
+
+
+
+//Callback HELL
+//CallBack hell is the situation when we have the multiple callback function inside the another callback function
+ 
+
+//for eg:
+
+//  we have the items in the cart and we want to create the order and then we want to proceed to the payment
+// lets see the flow for it 
+// Add items to cart -> Create Order -> Proceed to Payment -> Update Wallet  -> Show Order Summary 
+
+
+const cart =["shoes", "pants", "kurta"];
+
+api.addToCart(cart,function (){
+    api.createOrder(function (){
+        console.log("order created successfully")
+         api.proceedToPayment(function(){
+            console.log("payment done successfully")
+             api.UpdateWallet(function () {
+                console.log("wallet updated successfully")
+                 api.showOrderSummary();
+            })
+        })
+    })
+})
+
+
+// In the above example we have the multiple callback function inside the another callback function
+

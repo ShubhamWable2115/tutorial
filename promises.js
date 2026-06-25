@@ -23,12 +23,15 @@
 //Reject when the code gets caught into the error use for the error handling using try catch 
 
 
-const cart =["shoes, pants, kurta"];
+// const cart =["shoes, pants, kurta"];
 
-const promise =createOrder(cart);
+// const promise =createOrder(cart);
 
-promise.then(function(){
-    proceedToPayement(orderId);
-})
+// promise.then(function(){
+//     proceedToPayement(orderId);
+// })
 
+
+//Defination of the promise::
+// The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
 

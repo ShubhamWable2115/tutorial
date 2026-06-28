@@ -35,3 +35,12 @@
 //Defination of the promise::
 // The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
 
+
+
+const promiseOne = new Promise(function(resolve,reject){
+     //Do any task 
+     //database call , cryptography , network call, setTimeout
+     setTimeout(function(){
+        console.log("Promise is pending");
+     },2000);
+})

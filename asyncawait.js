@@ -2,8 +2,8 @@
 
 
 
-////Async  Always return's promise in the function 
-//async is the keyword that is used to create the async function 
+////async function  Always return's promise in the function 
+// async is the keyword that is used to create the async function 
 
 // const p =new Promise ((resolve , reject)=>{
 //     resolve ("promise resolved value");
